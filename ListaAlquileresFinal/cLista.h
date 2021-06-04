@@ -73,14 +73,13 @@ template <class T1>
 cLista<T1>::~cLista(void)
 {
 	if (lista != NULL) {
-		if (eliminar)
-		{
+		
 			for (int i = 0; i < ca; i++)
 			{
 				if (lista[i] != NULL)
 					delete lista[i];
 			}
-		}
+		
 		delete[] lista;
 
 	}
